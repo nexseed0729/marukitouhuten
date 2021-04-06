@@ -70,11 +70,11 @@ header {
   position: relative;         
 }
 
-.main__slide{
+#main__slide{
   position:relative;
 }
 
-.main__slide__image{
+#slide_img{
 position:absolute;
 left:0;
 top:0;
