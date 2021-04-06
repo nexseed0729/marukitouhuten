@@ -1,4 +1,4 @@
-const img_src = ["img1.jpg", "img2.jpg", "img3.jpg"];
+const img_src = ["img1.jpeg", "img2.jpeg", "img3.jpeg"];
       let num = -1;
  
       function slide_time() {
@@ -10,4 +10,4 @@ const img_src = ["img1.jpg", "img2.jpg", "img3.jpg"];
         document.getElementById("slide_img").src = img_src[num];
       }
  
-setInterval(slide_time, 1800);
+setInterval(slide_time, 5000);
