@@ -2,6 +2,13 @@ displa* {
   box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+    header {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+}
+
 body {
   min-width: 1030px;
   margin: 0;
@@ -197,7 +204,7 @@ top:0;
 }
 
 .product__content__image:hover {
-  width: 16%;
+  
   display: inline-block;
   margin: 0px 12px;
   background-color: rgb(65, 203, 238);
