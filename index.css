@@ -2,10 +2,17 @@ displa* {
   box-sizing: border-box;
 }
 
+@media (max-width: 600px) {
+    header {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+}
+
 body {
   min-width: 1030px;
   margin: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 header {
@@ -13,7 +20,7 @@ header {
   background-color: rgb(247, 244, 244);
 }
 
-.head {
+#head {
   display: flex;
   justify-content: flex-start;
   height: 70px;
@@ -39,27 +46,76 @@ header {
 .head__right {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px 0px 320px;
+  padding: 20px 0px 0px 200px;
 }
 
-.head__right__tohu {
-  font-size: 28px;
+#head__right__tohu {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;  
+  outline: none; 
+  background: transparent; 
+  display: block;
+  margin:  0px 0px 20px 0px;
+  
 }
 
 .head__right__center {
-  font-size: 27px;
+  font-size: 20px;
   padding: 0px 45px 0px 45px;
 }
 
 .head__right__menu {
-  font-size: 28px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;  
+  outline: none; 
+  background: transparent; 
+  display: block;
+  margin:  0px 0px 20px 30px;
+  text-decoration: none;
+  color: black;
+}
+
+#head__right__takeout {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;  
+  outline: none; 
+  background: transparent; 
+  display: block;
+  margin:  0px 0px 20px 30px;
+  text-decoration: none;
+  color: black;
+}
+
+.head__right__icon {
+  
+  margin-left: 30px;
+  padding-top: 20px;
   
 }
 
-.head__right__access {
-  font-size: 28px;
-  margin-left: 400px;
-  padding-top: 20px;
+#head__right__icon__select {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.fas {
+  margin-right: 40px;
+}
+
+.fab {
+  margin-right: 40px;
+}
+
+.twitter-color{
+  color: rgb(56, 204, 241);
+}
+
+.facebook-color {
+  color: rgb(21, 93, 226);
 }
 
 .main {
@@ -81,12 +137,12 @@ top:0;
 
 }
 
-.content {
-  background-color: rgb(245, 176, 72);
+#content {
+ background-image: url("img5.jpeg");
   color: aliceblue;
   text-align: center;
-  height: 240px;
-  
+  height: 700px;
+  background-size: cover;
 }
 
 .content__top {
@@ -116,32 +172,49 @@ top:0;
   color: rgb(245, 176, 72);
 }
 
-.product {
-  margin: 60px 0px;
+#product {
+  padding: 60px 0px;
+  background-image: url("img7.jpeg");
+  background-size: cover;
 }
 
 .product__content {
-  margin-left: 80px;
+ display: flex;
+ justify-content: space-around;
+ 
 }
 
 .product__content__text {
   text-align: center;
-  color: rgb(78, 72, 72);
+  color: rgb(59, 57, 57);
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 30px;
+  
 }
 
 .product__content__image {
-  width: 30%;
+  width: 16%;
   display: inline-block;
   margin: 0px 12px;
-  background-color: rgb(219, 208, 208);
+  background-color: rgb(250, 245, 245);
   cursor: pointer;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+.product__content__image:hover {
+  
+  display: inline-block;
+  margin: 0px 12px;
+  background-color: rgb(65, 203, 238);
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 3px;
 }
 
 .product__content__image__box {
-  width: 200px;
+  
   height: 260px;
  
 }
@@ -154,14 +227,14 @@ top:0;
 
 footer {
   background-color: rgb(247, 241, 241);
-  color: rgb(78, 76, 76);
+  color: rgb(61, 60, 60);
   width: 100%;
   position: relative;
   /* position: absolute;
   bottom: 0; */
 }
 
-.foot {
+#foot {
   display: flex;
   justify-content: space-around;
 }
@@ -208,3 +281,20 @@ footer {
   margin: 10px 0px;
 }
 
+.upper {
+  position:fixed;
+  right:50px;
+  bottom:50px;
+  transition:1s;
+  opacity:0.5;
+  text-decoration: none;
+  
+}
+
+.upper:hover {
+  opacity:1;
+}
+
+.upper-icon {
+  color: rgb(90, 87, 87);
+}
