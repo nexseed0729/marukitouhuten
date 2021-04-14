@@ -26,14 +26,17 @@ header {
   color: aliceblue;
   padding: 6px;
   border-radius: 10px;
+  
 }
 
 .head__left__text {
   font-size: 25px;
+  display: inline-block;
 }
 
 .head__left__eat {
   font-size: 14px;
+  display: inline-block;
 }
 
 .head__right {
@@ -124,11 +127,11 @@ top:0;
   margin-left: 80px;
 }
 
-.product__content__text {
+.product__text {
   text-align: center;
   color: rgb(78, 72, 72);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 30px;
 }
 
