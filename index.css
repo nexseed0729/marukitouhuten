@@ -65,6 +65,10 @@ header {
   
 }
 
+#head__right__tohu:hover {
+  color: red;
+}
+
 .head__right__center {
   font-size: 17px;
   padding: 0px 45px 0px 45px;
@@ -82,7 +86,11 @@ header {
   color: black;
 }
 
-#head__right__takeout {
+.head__right__menu:hover{
+  color: red;
+}
+
+#head__right__access {
   font-size: 17px;
   cursor: pointer;
   border: none;  
@@ -92,6 +100,10 @@ header {
   margin:  0px 0px 20px 30px;
   text-decoration: none;
   color: black;
+}
+
+#head__right__access:hover {
+  color: red;
 }
 
 .head__right__icon {
@@ -143,7 +155,7 @@ top:0;
 }
 
 #content {
- background-image: url("img9.webp");
+ background-image: url("img10.webp");
   /* background-color: aliceblue; */
   text-align: center;
   height: 600px;
@@ -282,7 +294,7 @@ top:0;
 
 footer {
   margin-top: 100px;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(255, 251, 251);
   color: rgb(61, 60, 60);
   width: 100%;
   position: relative;
@@ -335,6 +347,14 @@ footer {
 
 .foot__right__time {
   margin: 10px 0px;
+}
+
+.wrapper {
+  background-color: rgb(22, 20, 18);
+  text-align: center;
+  padding: 26px 0;
+  color: #fff;
+  font-size: 0.875rem;
 }
 
 .upper {
