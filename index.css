@@ -372,10 +372,11 @@ footer {
     height: 300px;
     padding: 10px 10px 10px 10px;
     font-size: 1.4rem;
+    margin-bottom: 20px;
   }
   #content {
-    /* margin: 10px 10px 10px 10px;
-    padding: 20px 20px 20px 20px; */
+    /* margin: 10px 10px 10px 10px; */
+    /* padding: 20px 20px 20px 20px; */
     font-size: 1rem; 
   }
   .content__head {
@@ -386,9 +387,12 @@ footer {
 
   #product {
     font-size: 1.4rem;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 20px 20px 20px;
+    
+  }
+
+  .product__image {
+    font-size: 1.4rem;
+    height: 80%;
   }
 
   #foot {
