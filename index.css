@@ -5,16 +5,28 @@ displa* {
 
 
 body {
-  
   margin: 0;
   height: 100%;
-  
+}
+
+.sa {
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.sa.show {
+  opacity: 1;
+  transform: none;
+}
+
+.sa--up {
+  transform: translate(0, 100px);
 }
 
 header {
   width: 100%;
   background-color: rgb(255, 255, 255);
-  
+  margin:  0px 0px 30px 0px;
 }
 
 #head {
@@ -22,12 +34,15 @@ header {
   justify-content: space-between;
   height: 70px;
   padding: 5px 0px 10px 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
 }
 
 .head__left {
   /* margin: 0px 0px 0px 20px; */
-  background-color: black;
-  color: aliceblue;
+  /* background-color: white; */
   padding: 6px;
   border-radius: 10px;
   width: 350px;
@@ -37,7 +52,6 @@ header {
 .head__left__text {
   font-size: 35px;
   display: inline-block;
-  
 }
 
 .head__left__eat {
@@ -50,19 +64,18 @@ header {
   justify-content: space-between;
   /* width: 340px; */
   line-height: 70px;
-  
+  padding-left: 90px;
 }
 
 .head__right__tohu {
   font-size: 15px;
   cursor: pointer;
-  border: none;  
-  outline: none; 
-  background: transparent; 
+  border: none;
+  outline: none;
+  background: transparent;
   display: inline-block;
   text-decoration: none;
-  color: black;
-  
+  color: white;
 }
 
 .head__right__tohu:hover {
@@ -73,12 +86,12 @@ header {
 .head__right__menu {
   font-size: 15px;
   cursor: pointer;
-  border: none;  
-  outline: none; 
-  background: transparent; 
+  border: none;
+  outline: none;
+  background: transparent;
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: white;
   margin-left: 45px;
 }
 
@@ -90,12 +103,12 @@ header {
 #head__right__access {
   font-size: 15px;
   cursor: pointer;
-  border: none;  
-  outline: none; 
-  background: transparent; 
+  border: none;
+  outline: none;
+  background: transparent;
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: white;
   margin-left: 45px;
 }
 
@@ -104,19 +117,19 @@ header {
   border-bottom: solid 2px red;
 }
 
-.head__icon { 
+.head__icon {
   margin-left: 10px;
-  padding-top: 15px; 
+  padding-top: 15px;
   /* width: 200px; */
   margin-right: 20px;
 }
 
-.head__icon__left { 
+.head__icon__left {
   display: inline-block;
   cursor: pointer;
 }
 
-.head__icon__right { 
+.head__icon__right {
   display: inline-block;
   margin-left: 45px;
   cursor: pointer;
@@ -125,28 +138,28 @@ header {
 
 .fas {
   /* margin-right: 40px; */
-  
 }
 
 .fab {
   /* margin-right: 40px; */
-  
 }
 
 .twitter-color{
-  color: rgb(56, 204, 241);
+  color: rgb(232, 235, 236);
 }
 
 .facebook-color {
-  color: rgb(21, 93, 226);
+  color: rgb(230, 232, 235);
 }
 
 .main {
   height: 500px;
   text-align: center;
   overflow: hidden;
-  width: 100%;
-  position: relative;       
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 #main__slide{
@@ -158,34 +171,35 @@ header {
   left:0;
   top:0;
   display: block;
-  
 }
 
 #content {
-  width: 100%;
+  max-width: 1200px;
   background-image: url("img10.webp");
   text-align: center;
   height: 600px;
   background-size: cover;
   background-color:rgba(255,255,255,0.8);
   background-blend-mode:lighten;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .content__head {
-  font-size: 28px;
+  font-size: 20px;
   padding-top:40px ;
   padding: 40px 0px 60px 0px;
 }
 
 .content__top {
-  font-size: 50px;
+  font-size: 30px;
   padding-top:40px ;
   padding: 40px 0px 60px 0px;
 }
 
 .content__bottom {
   padding-top:10px ;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #product {
@@ -195,7 +209,7 @@ header {
 }
 
 .product__content {
- 
+
 }
 
 .product__content__text {
@@ -218,77 +232,84 @@ header {
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 100px;
-  
 }
 
-.product__content__main {  
+.product__content__main {
   cursor: pointer;
-  
   background-color: rgb(255, 255, 255);
   margin: 0px 0px 200px 20px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .product__content__image__box {
   display: inline-block;
- 
 }
 
 .product__image {
-  width: 550px;
+  width: 400px;
   height: 400px;
   display: inline-block;
+  border-radius: 50%;
 }
 
-.product__content__box {  
+.product__content__box {
   display: flex;
   justify-content: space-around;
+  padding: 0px 220px;
 }
 
-.product__content__title {  
+.product__content__title {
   font-size: 20px;
   padding-bottom: 10px;
   font-weight: bold;
 }
 
-.product__content__price {  
+.product__content__price {
   font-size: 14px;
   padding-top: 20px;
 }
 
 .product__content__image {
-  
   display: inline-block;
   margin: 0px 12px;
   background-color: rgb(255, 255, 255);
   cursor: pointer;
-  
 }
 
 .product__img {
-  width: 400px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
   display: inline-block;
 }
 
 footer {
   margin-top: 100px;
-  background-color: rgb(255, 251, 251);
+  background-color: rgb(194, 187, 187);
   color: rgb(61, 60, 60);
   width: 100%;
   position: relative;
   /* position: absolute;
   bottom: 0; */
+  background-color: black;
 }
 
 #foot {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
 }
 
 .foot__left {
   margin: 12px 0px;
   font-size: 20px;
+  position: absolute;
+  right: 30px;
+  bottom: 150px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  opacity: 0.8;
 }
 
 .foot__left__name {
@@ -299,7 +320,7 @@ footer {
   text-align: center;
   width: 200px;
   border-radius: 10px;
-  
+  margin: 0 auto;
 }
 
 .foot__left__post {
@@ -312,8 +333,9 @@ footer {
 }
 
 .foot__right {
-  margin: 13px 0px;
+  /* margin: 13px 0px; */
   font-size: 20px;
+  max-width: 100%;
 }
 
 .foot__right__tell {
@@ -328,8 +350,14 @@ footer {
   margin: 10px 0px;
 }
 
+.foot__right__map {
+  width: 1440px;
+}
+
+
+
 .wrapper {
-  background-color: rgb(22, 20, 18);
+  background-color: black;
   text-align: center;
   padding: 26px 0;
   color: #fff;
@@ -343,7 +371,6 @@ footer {
   transition:1s;
   opacity:0.5;
   text-decoration: none;
-  
 }
 
 .upper:hover {
@@ -354,7 +381,7 @@ footer {
   color: rgb(90, 87, 87);
 }
 
-@media (max-width:600px) { 
+@media (max-width:600px) {
   #head {
     font-size: 1.4rem;
     flex-direction: column;
@@ -387,7 +414,6 @@ footer {
 
   #product {
     font-size: 1.4rem;
-    
   }
 
   .product__image {
