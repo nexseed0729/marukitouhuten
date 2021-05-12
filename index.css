@@ -79,8 +79,8 @@ header {
 }
 
 .head__right__tohu:hover {
-  color: red;
-  border-bottom: solid 2px red;
+
+  border-bottom: solid 2px white;
 }
 
 .head__right__menu {
@@ -96,11 +96,10 @@ header {
 }
 
 .head__right__menu:hover{
-  color: red;
-  border-bottom: solid 2px red;
+  border-bottom: solid 2px white;
 }
 
-#head__right__access {
+.head__right__access {
   font-size: 15px;
   cursor: pointer;
   border: none;
@@ -113,8 +112,7 @@ header {
 }
 
 #head__right__access:hover {
-  color: red;
-  border-bottom: solid 2px red;
+  border-bottom: solid 2px white;
 }
 
 .head__icon {
@@ -395,6 +393,21 @@ footer {
     width: 100%;
     text-align: center;
   }
+  .head__left {
+    line-height: 20px;
+  }
+  .head__right__tohu,
+  .head__right__menu,
+  .head__right__access {
+    color: black;
+    font-size: 13px;
+  }
+  .fa-twitter-square {
+    color: rgb(0, 225, 255);
+  }
+  .fa-facebook-square {
+    color: rgb(14, 57, 245);
+  }
   .main {
     height: 300px;
     padding: 10px 10px 10px 10px;
@@ -404,21 +417,51 @@ footer {
   #content {
     /* margin: 10px 10px 10px 10px; */
     /* padding: 20px 20px 20px 20px; */
-    font-size: 1rem; 
-  }
-  .content__head {
-    font-size: 10px;
+    font-size: 1rem;
+    height: 300px;
   }
   .content__head,
-  .content__head
-
+  .content__top,
+  .content__bottom {
+    font-size: 10px;
+  }
   #product {
     font-size: 1.4rem;
   }
-
   .product__image {
-    font-size: 1.4rem;
-    height: 80%;
+    height: 160px;
+    width: 190px;
+    border-radius: 50%;
+  }
+  .product__text{
+    font-size: 18px;
+  }
+  .product__content__text__top {
+    font-size: 17px;
+  }
+  .product__content__text__bottom {
+    font-size: 14px;
+  }
+  .product__content__box {
+    display: block;
+    padding: 0px;
+  }
+  .product__content__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .product__img {
+    width: 180px;
+    height: 180px;
+  }
+  .product__content__price {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  .product__content__image {
+    text-align: center;
+    margin-left: 90px;
   }
 
   #foot {
@@ -427,11 +470,19 @@ footer {
     align-items: center;
   }
   .foot__left {
-    text-align: center;
+    text-align: left;
   }
-
+  .foot__left {
+    position: relative;
+    margin: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0;
+  }
   .foot__left__name {
-    margin-left: 60px;
+    margin-left: 150px;
   }
   .foot__right__map {
     width: 100%;
