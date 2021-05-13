@@ -1,4 +1,4 @@
-const img_src = ["img1.jpeg", "img2.jpeg", "img3.jpeg"];
+const img_src = ["./img/img1.jpeg", "./img/img2.jpeg", "./img/img3.jpeg"];
       let num = -1;
 
       function slide_time() {
