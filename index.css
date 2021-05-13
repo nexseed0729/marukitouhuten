@@ -111,7 +111,7 @@ header {
   margin-left: 45px;
 }
 
-#head__right__access:hover {
+.head__right__access:hover {
   border-bottom: solid 2px white;
 }
 
@@ -173,7 +173,7 @@ header {
 
 #content {
   max-width: 1200px;
-  background-image: url("img10.webp");
+  background-image: url('./img/img10.webp');
   text-align: center;
   height: 600px;
   background-size: cover;
@@ -393,6 +393,9 @@ footer {
     width: 100%;
     text-align: center;
   }
+  .head__right {
+    padding-left: 0px;
+  }
   .head__left {
     line-height: 20px;
   }
@@ -400,10 +403,11 @@ footer {
   .head__right__menu,
   .head__right__access {
     color: black;
-    font-size: 13px;
+    font-size: 11px;
   }
   .fa-twitter-square {
     color: rgb(0, 225, 255);
+
   }
   .fa-facebook-square {
     color: rgb(14, 57, 245);
@@ -425,22 +429,48 @@ footer {
   .content__bottom {
     font-size: 10px;
   }
+  .content__head {
+    font-size: 16px;
+  }
+  .content__top {
+    font-size: 14px;
+  }
   #product {
     font-size: 1.4rem;
   }
   .product__image {
     height: 160px;
-    width: 190px;
+    width: 160px;
     border-radius: 50%;
+    margin-bottom: 30px;
   }
   .product__text{
     font-size: 18px;
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  .product__content__main {
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+  .product__top {
+    padding-bottom: 100px;
+  }
+  .product__bottom {
+    margin-bottom: 100px;
   }
   .product__content__text__top {
     font-size: 17px;
   }
   .product__content__text__bottom {
     font-size: 14px;
+  }
+  .image__bottom {
+    position: absolute;
+    top: -200px;
+    left: 27%;
   }
   .product__content__box {
     display: block;
@@ -461,7 +491,7 @@ footer {
   }
   .product__content__image {
     text-align: center;
-    margin-left: 90px;
+    /* margin-left: 90px; */
   }
 
   #foot {
@@ -481,8 +511,13 @@ footer {
     padding: 20px;
     border-radius: 0;
   }
-  .foot__left__name {
-    margin-left: 150px;
+  .upper {
+    position:fixed;
+    right:20px;
+    bottom:50px;
+    transition:1s;
+    opacity:0.5;
+    text-decoration: none;
   }
   .foot__right__map {
     width: 100%;
